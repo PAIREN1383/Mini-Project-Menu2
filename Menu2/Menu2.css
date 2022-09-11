@@ -14,6 +14,11 @@ body {
     top: 0;
 }
 
+.dropdown-div {
+    position: relative;
+    display: inline-block;
+}
+
 .as {
     text-decoration: none;
     color: #000000;
@@ -30,25 +35,6 @@ body {
     color: #ffffff;
 }
 
-.dp {
-    padding: 4px !important;
-    display: block;
-}
-
-.dropdown-div {
-    position: relative;
-    display: inline-block;
-}
-
-.menu-as {
-    display: none;
-    width: 120%;
-    min-width: max-content;
-    position: absolute;
-    margin-top: 10px;
-    z-index: 1;
-}
-
 .dp-content::after {
     content: '\25B2';
     top: 28%;
@@ -61,10 +47,23 @@ body {
     content: '\25BC';
 }
 
+.menu-as {
+    display: none;
+    width: 120%;
+    min-width: max-content;
+    position: absolute;
+    margin-top: 10px;
+    z-index: 1;
+}
+
 .dropdown-div:hover .menu-as {
     display: block;
 }
 
+.dp {
+    padding: 4px !important;
+    display: block;
+}
 
 @media only screen and (min-width:500px){
     .as {
@@ -83,4 +82,3 @@ body {
 .text::first-letter {
     font-size: 25px;
 }
-
